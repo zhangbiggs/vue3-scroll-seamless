@@ -9,8 +9,13 @@ import {
   computed,
   ref,
   reactive,
+  defineExpose,
 } from "vue";
-
+defineExpose({
+  reset,
+  changeEnter,
+  changeLeave,
+})
 animationFrame();
 
 // ref参数
